@@ -1,0 +1,629 @@
+﻿<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <title>Trang mua sắm</title>
+    <!--/tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Grocery Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+    </script>
+    <!--//tags -->
+    <link href="~/Assets/Client/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/Assets/Client/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/Assets/Client/css/font-awesome.css" rel="stylesheet">
+    <!--pop-up-box-->
+    <link href="~/Assets/Client/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+    <!--//pop-up-box-->
+    <!-- price range -->
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui1.css">
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+</head>
+
+<body>
+    <!-- top-header -->
+    <div class="header-most-top">
+        <p>Shop hoa tươi chất lượng</p>
+    </div>
+    <!-- //top-header -->
+    <!-- header-bot-->
+    <div class="header-bot">
+        <div class="header-bot_inner_wthreeinfo_header_mid">
+            <!-- header-bot-->
+            <div class="col-md-4 logo_agile">
+                <h1>
+                    <a href="index.html">
+                        <span>L</span>oan
+                        <span>F</span>lower
+                    </a>
+                </h1>
+            </div>
+            <!-- header-bot -->
+            <div class="col-md-8 header">
+                <!-- header lists -->
+                <ul>
+                    <li>
+                        <a class="play-icon popup-with-zoom-anim" href="#small-dialog1">
+                            <span class="fa fa-map-marker" aria-hidden="true"></span> Địa chỉ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#myModal1">
+                            <span class="fa fa-truck" aria-hidden="true"></span> Giao hàng
+                        </a>
+                    </li>
+                    <li>
+                        <span class="fa fa-phone" aria-hidden="true"></span> 001 234 5678
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#myModal1">
+                            <span class="fa fa-unlock-alt" aria-hidden="true"></span> Đăng nhập
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#myModal2">
+                            <span class="fa fa-pencil-square-o" aria-hidden="true"></span> Đăng ký
+                        </a>
+                    </li>
+                </ul>
+                <!-- //header lists -->
+                <!-- search -->
+                <div class="agileits_search">
+                    <form action="#" method="post">
+                        <input name="Search" type="search" placeholder="Nhập nội dung tìm kiếm !" required="">
+                        <button type="submit" class="btn btn-default" aria-label="Left Align">
+                            <span class="fa fa-search" aria-hidden="true"> </span>
+                        </button>
+                    </form>
+                </div>
+                <!-- //search -->
+                <!-- cart details -->
+                <div class="top_nav_right">
+                    <div class="wthreecartaits wthreecartaits2 cart cart box_1">
+                        <form action="#" method="post" class="last">
+                            <input type="hidden" name="cmd" value="_cart">
+                            <input type="hidden" name="display" value="1">
+                            <button class="w3view-cart" type="submit" name="submit" value="">
+                                <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- //cart details -->
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    
+    <div class="ban-top">
+        <div class="container">
+            <div class="agileits-navi_search">
+                <form action="#" method="post">
+                    <select id="agileinfo-nav_search" name="agileinfo_search" required="">
+                        <option value="">Danh mục sản phẩm</option>
+                        <option value="Kitchen">Hoa khai trương</option>
+                        <option value="Household">Hoa sinh nhật</option>
+                        <option value="Snacks &amp; Beverages">Hoa bó</option>
+                        <option value="Personal Care">Hoa chúc mừng</option>
+                        <option value="Gift Hampers">Hoa lễ</option>
+                    </select>
+                </form>
+            </div>
+            <div class="top_nav_left">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                                    aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav menu__list">
+                                <li class="active">
+                                    <a class="nav-stylehead" href="index.html">
+                                        Home
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        Hoa sinh nhật
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu multi-column columns-3">
+                                        <div class="agile_inner_drop_nav_info">
+                                            <div class="col-sm-4 multi-gd-img">
+                                                <ul class="multi-column-dropdown">
+                                                    <li>
+                                                        <a href="product.html">Sinh nhật người yêu</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="product.html">Sinh nhật bố mẹ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="product.html">Sinh nhật bạn bè</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="product.html">Sinh nhật đồng nghiệp</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="product.html">Sinh nhật sếp</a>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </div>
+                             
+                                            <div class="col-sm-4 multi-gd-img">
+                                                <img src="images/nav.png" alt="">
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        Hoa dịp lễ
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu multi-column columns-3">
+                                        <div class="agile_inner_drop_nav_info">
+                                            <div class="col-sm-6 multi-gd-img">
+                                                <ul class="multi-column-dropdown">
+                                                    <li>
+                                                        <a href="product2.html">Ngày của mẹ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="product2.html">Lễ tình nhân</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="product2.html">Ngày phụ nữ Việt Nam</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="product2.html">Ngày quốc tế phụ nữ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="product2.html">Ngày khai giảng</a>
+                                                    </li>
+                                                  
+                                                </ul>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                    <a class="nav-stylehead" href="faqs.html">Blog</a>
+                                </li>
+                                <li class="">
+                                    <a class="nav-stylehead" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- //navigation -->
+    <!-- banner -->
+    
+    <!-- //banner -->
+    <!-- top Products -->
+    <div class="ads-grid">
+        <div class="container">
+            <!-- tittle heading -->
+            
+            <!-- //tittle heading -->
+            <!-- product left -->
+            @RenderSection("menuleft", required: false)
+            <!-- //product left -->
+            <!-- product right -->
+            @RenderBody();
+            <!-- //product right -->
+        </div>
+    </div>
+    <!-- //top products -->
+    <!-- special offers -->
+    <!-- //special offers -->
+    <!-- newsletter -->
+    <div class="footer-top">
+        <div class="container-fluid">
+            <div class="col-xs-8 agile-leftmk">
+                <h2>Hoa tươi được làm mới mỗi ngày đảm bảo chất lượng cho quý khách hàng </h2>
+                <p>Giao hàng miễn phí cho đơn hàng đầu tiên của bạn!</p>
+                <form action="#" method="post">
+                    <input type="email" placeholder="E-mail" name="email" required="">
+                    <input type="submit" value="Subscribe">
+                </form>
+                <div class="newsform-w3l">
+                    <span class="fa fa-envelope-o" aria-hidden="true"></span>
+                </div>
+            </div>
+            <div class="col-xs-4 w3l-rightmk">
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- //newsletter -->
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <!-- footer first section -->
+            <p class="footer-main">
+                <span>"Loan Flower"</span> được tạo ra với mục đích sẽ mang đến những đóa hoa tươi
+                đồng hành cùng quý khách trong những ngày trọng đại và ý nghĩa.Với kinh nghiệm phục vụ trong ngành điện hoa,
+                chúng tôi thấu hiểu được mức độ quan trọng trong công việc của mình là truyền tải đúng và đủ thông điệp của người tặng đến người nhận.Đến với điện hoa chúng tôi bạn sẽ yên tâm về chất lượng phục vụ,
+                chúng tôi cam kết giao hàng đúng thời gian và chất lượng như mong muốn.
+            </p>
+            <!-- //footer first section -->
+            <!-- footer second section -->
+            <div class="w3l-grids-footer">
+                <div class="col-xs-4 offer-footer">
+                    <div class="col-xs-4 icon-fot">
+                        <span class="fa fa-map-marker" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-xs-8 text-form-footer">
+                        <h3>Theo dõi đơn hàng của bạn</h3>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-xs-4 offer-footer">
+                    <div class="col-xs-4 icon-fot">
+                        <span class="fa fa-refresh" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-xs-8 text-form-footer">
+                        <h3>Trả hàng miễn phí và dễ dàng</h3>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-xs-4 offer-footer">
+                    <div class="col-xs-4 icon-fot">
+                        <span class="fa fa-times" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-xs-8 text-form-footer">
+                        <h3>Hủy trực tuyến </h3>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <!-- //footer second section -->
+            <!-- footer third section -->
+            <div class="footer-info w3-agileits-info">
+                <!-- footer categories -->
+                <div class="col-sm-5 address-right">
+                    <div class="col-xs-6 footer-grids">
+                        <h3>Danh mục sản phẩm</h3>
+                        <ul>
+                            <li>
+                                <a href="product.html">Hoa khai trương</a>
+                            </li>
+                            <li>
+                                <a href="product.html">Hoa sinh nhật</a>
+                            </li>
+                            <li>
+                                <a href="product.html">Hoa bó</a>
+                            </li>
+                            <li>
+                                <a href="product2.html">Hoa chúc mừng</a>
+                            </li>
+                            <li>
+                                <a href="product.html">Hoa lễ</a>
+                            </li>
+                        </ul>
+                    </div>
+                   
+                </div>
+                <!-- //footer categories -->
+                <!-- quick links -->
+                <div class="col-sm-5 address-right">
+                    <div class="col-xs-6 footer-grids">
+                        <h3>Đường dẫn nhanh</h3>
+                        <ul>
+                            <li>
+                                <a href="about.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Hoa sinh nhật</a>
+                            </li>
+                            <li>
+                                <a href="help.html">Hoa dịp lễ</a>
+                            </li>
+                            <li>
+                                <a href="faqs.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="terms.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 footer-grids">
+                        <h3>Get in Touch</h3>
+                        <ul>
+                            <li>
+                                <i class="fa fa-map-marker"></i> Bình Định.
+                            </li>
+                            <li>
+                                <i class="fa fa-mobile"></i> 333 222 3333
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i> +222 11 4444
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope-o"></i>
+                                <a href="mailto:example@mail.com"> mail@example.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //quick links -->
+                <!-- social icons -->
+                <div class="col-sm-2 footer-grids  w3l-socialmk">
+                    <h3>Follow Us on</h3>
+                    <div class="social">
+                        <ul>
+                            <li>
+                                <a class="icon fb" href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="icon tw" href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="icon gp" href="#">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="agileits_app-devices">
+                        <h5>Download the App</h5>
+                        <a href="#">
+                            <img src="~/Assets/Client/images/1.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="~/Assets/Client/images/2.png" alt="">
+                        </a>
+                        <div class="~/Assets/Client/clearfix"> </div>
+                    </div>
+                </div>
+                <!-- //social icons -->
+                <div class="clearfix"></div>
+            </div>
+            <!-- //footer third section -->
+            <!-- footer fourth section (text) -->
+            <div class="agile-sometext">
+                
+                <!-- brands -->
+                
+                <!-- //brands -->
+                <!-- payment -->
+                <div class="sub-some child-momu">
+                    <h5>Payment Method</h5>
+                    <ul>
+                        <li>
+                            <img src="~/Assets/Client/images/pay2.png" alt="">
+                        </li>
+                        <li>
+                            <img src="~/Assets/Client/images/pay5.png" alt="">
+                        </li>
+                        <li>
+                            <img src="~/Assets/Client/images/pay1.png" alt="">
+                        </li>
+                        <li>
+                            <img src="~/Assets/Client/images/pay4.png" alt="">
+                        </li>
+                        <li>
+                            <img src="~/Assets/Client/images/pay6.png" alt="">
+                        </li>
+                        <li>
+                            <img src="~/Assets/Client/images/pay3.png" alt="">
+                        </li>
+                        <li>
+                            <img src="~/Assets/Client/images/pay7.png" alt="">
+                        </li>
+                        <li>
+                            <img src="~/Assets/Client/images/pay8.png" alt="">
+                        </li>
+                        <li>
+                            <img src="~/Assets/Client/images/pay9.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <!-- //payment -->
+            </div>
+            <!-- //footer fourth section (text) -->
+        </div>
+    </footer>
+    <!-- //footer -->
+    <!-- copyright -->
+    <div class="copy-right">
+        <div class="container">
+            <p>
+                © 2017 Grocery Shoppy. All rights reserved | Design by
+                <a href="http://w3layouts.com"> W3layouts.</a>
+            </p>
+        </div>
+    </div>
+    <!-- //copyright -->
+    <!-- js-files -->
+    <!-- jquery -->
+    <script src="~/Assets/Client/js/jquery-2.1.4.min.js"></script>
+    <!-- //jquery -->
+    <!-- popup modal (for signin & signup)-->
+    <script src="~/Assets/Client/js/jquery.magnific-popup.js"></script>
+    <script>
+		$(document).ready(function () {
+			$('.popup-with-zoom-anim').magnificPopup({
+				type: 'inline',
+				fixedContentPos: false,
+				fixedBgPos: true,
+				overflowY: 'auto',
+				closeBtnInside: true,
+				preloader: false,
+				midClick: true,
+				removalDelay: 300,
+				mainClass: 'my-mfp-zoom-in'
+			});
+
+		});
+    </script>
+    <!-- Large modal -->
+    <!-- <script>
+        $('#').modal('show');
+    </script> -->
+    <!-- //popup modal (for signin & signup)-->
+    <!-- cart-js -->
+    <script src="~/Assets/Client/js/minicart.js"></script>
+    <script>
+		paypalm.minicartk.render(); //use only unique class names other than paypalm.minicartk.Also Replace same class name in css and minicart.min.js
+
+		paypalm.minicartk.cart.on('checkout', function (evt) {
+			var items = this.items(),
+				len = items.length,
+				total = 0,
+				i;
+
+			// Count the number of each item in the cart
+			for (i = 0; i < len; i++) {
+				total += items[i].get('quantity');
+			}
+
+			if (total < 3) {
+				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
+				evt.preventDefault();
+			}
+		});
+    </script>
+    <!-- //cart-js -->
+    <!-- price range (top products) -->
+    <script src="~/Assets/Client/js/jquery-ui.js"></script>
+    <script>
+		//<![CDATA[
+		$(window).load(function () {
+			$("#slider-range").slider({
+				range: true,
+				min: 0,
+				max: 9000,
+				values: [50, 6000],
+				slide: function (event, ui) {
+					$("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+				}
+			});
+			$("#amount").val("$" + $("#slider-range").slider("values", 0) + " - $" + $("#slider-range").slider("values", 1));
+
+		}); //]]>
+    </script>
+    <!-- //price range (top products) -->
+    <!-- flexisel (for special offers) -->
+    <script src="~/Assets/Client/js/jquery.flexisel.js"></script>
+    <script>
+		$(window).load(function () {
+			$("#flexiselDemo1").flexisel({
+				visibleItems: 3,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+				responsiveBreakpoints: {
+					portrait: {
+						changePoint: 480,
+						visibleItems: 1
+					},
+					landscape: {
+						changePoint: 640,
+						visibleItems: 2
+					},
+					tablet: {
+						changePoint: 768,
+						visibleItems: 2
+					}
+				}
+			});
+
+		});
+    </script>
+    <!-- //flexisel (for special offers) -->
+    <!-- password-script -->
+    <script>
+		window.onload = function () {
+			document.getElementById("password1").onchange = validatePassword;
+			document.getElementById("password2").onchange = validatePassword;
+		}
+
+		function validatePassword() {
+			var pass2 = document.getElementById("password2").value;
+			var pass1 = document.getElementById("password1").value;
+			if (pass1 != pass2)
+				document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+			else
+				document.getElementById("password2").setCustomValidity('');
+			//empty string means no validation error
+		}
+    </script>
+    <!-- //password-script -->
+    <!-- smoothscroll -->
+    <script src="~/Assets/Client/js/SmoothScroll.min.js"></script>
+    <!-- //smoothscroll -->
+    <!-- start-smooth-scrolling -->
+    <script src="~/Assets/Client/js/move-top.js"></script>
+    <script src="~/Assets/Client/js/easing.js"></script>
+    <script>
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+    </script>
+    <!-- //end-smooth-scrolling -->
+    <!-- smooth-scrolling-of-move-up -->
+    <script>
+		$(document).ready(function () {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+			};
+			*/
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+    </script>
+    <!-- //smooth-scrolling-of-move-up -->
+    <!-- for bootstrap working -->
+    <script src="~/Assets/Client/js/bootstrap.js"></script>
+    <!-- //for bootstrap working -->
+    <!-- //js-files -->
+
+
+</body>
+
+</html>
